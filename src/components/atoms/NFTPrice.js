@@ -44,8 +44,8 @@ export default function NFTPrice ({ nft }) {
       >
         <span style={{ display: 'inline-block', transform: 'translateY(3px)' }}>
           <Image
-            alt='Matic'
-            src='/matic.png'
+            alt='NRG'
+            src='/energi.png'
             width="20px"
             height="20px"
             onMouseEnter={handlePopoverOpen}
@@ -70,7 +70,7 @@ export default function NFTPrice ({ nft }) {
           onClose={handlePopoverClose}
           disableRestoreFocus
         >
-          <Typography sx={{ p: 1 }}>Matic</Typography>
+          <Typography sx={{ p: 1 }}>NRG</Typography>
         </Popover>
         {' '}{nft.price}
       </Typography>

@@ -42,7 +42,7 @@ _NFTs available_
 Show all account's created, owned and on sale NFTs.  
 Here you keep track of NFT's you've created and check for how much they've been last sold and their current owner.  
 You can also list your current owned NFTs or cancel existing ones.  
-To view this page, you must have Metamask installed and have it connected to Polygon's Testnet network.
+To view this page, you must have Metamask installed and have it connected to Energi's Testnet network.
 
 ![Created and owned NFTs](https://user-images.githubusercontent.com/16388408/151682482-9db61934-bf17-4ea7-bd09-8c3ee5878f13.png)  
 _Created and owned NFTs_
@@ -65,14 +65,14 @@ _Connect wallet message and button_
 
 ---
 
-If the Polygon's Testnet network is not detected, a message and an **ADD/CHANGE network button** will be available.
+If the Energi's Testnet network is not detected, a message and an **ADD/CHANGE network button** will be available.
 
 ![Add/Change Network message and button](https://user-images.githubusercontent.com/16388408/151680408-68255aa6-fee3-49b9-b8f2-36b0b62b406d.png)  
 _Add/Change Network message and button_
 
 ---
 
-If the connected account is low on balance of Matic tokens, a message with a faucet link is provided.
+If the connected account is low on balance of NRG tokens, a message with a faucet link is provided.
 
 ![A low on balance message with a faucet link](https://user-images.githubusercontent.com/16388408/151680555-a837c767-ae42-4826-8417-d46b78b68742.png)  
 _A low on balance message with a faucet link_
@@ -108,11 +108,11 @@ However, new deployed contract addresses can be updated on the frontend simply b
 # How to deploy
 
 - Frontend is deployed automatically on `main` branch using Vercel's github integration
-- Set ACCOUNT_PRIVATE_KEY in `.env.local` and send it some Polygon's Testnet [Matic](https://faucet.polygon.technology/) tokens
-- Run `npm run deploy:mumbai` to deploy contracts to Polygon`s Testnet (Mumbai)
-- Optional: do the same for ACCOUNT2_PRIVATE_KEY env and run `npm run setup-marketplace:mumbai` to setup the marketplace with existing tokens and sales.
+- Set ACCOUNT_PRIVATE_KEY in `.env.local` and send it some Energi's Testnet [NRG](https://faucet.energi.network/) tokens
+- Run `npm run deploy:energiTestnet` to deploy contracts to Energi`s Testnet
+- Optional: do the same for ACCOUNT2_PRIVATE_KEY env and run `npm run setup-marketplace:energiTestnet` to setup the marketplace with existing tokens and sales.
 - Run `npm run env` to update Vercel's environment variables with the new deployed contract addresses.\*
-- Make sure to use `Polygon Testnet Mumbai` as Metamask's network
+- Make sure to use `Energi Testnet` as Metamask's network
 
 _\* You'll need to create the envs on Vercel first_
 
@@ -127,17 +127,15 @@ _\* They're usually caused by incorrect contract addresses and wrong default gas
 
 # Wishlist
 
-- Refactor frontend code to accept other networks besides Mumbai
+- Refactor frontend code to accept other networks besides Energi
 - Lazyload for NFTs images and metadata
 - Add support for custom ERC20 tokens as payment (started on [#2](https://github.com/Markkop/nft-marketplace/pull/2))
 
 # Troubleshooting
 
-## Mumbai marketplace setup command is breaking with a 'estimate gas failed' error
+## Energi marketplace setup command is breaking with a 'estimate gas failed' error
 
-Try changing `hardhat.config.js` mumbai gas values.  
-I'm using the ones I've found here:  
-https://forum.moralis.io/t/deploy-to-polygon-matic-mumbai-fails/700
+Try changing `hardhat.config.js` energiTestnet gas values.  
 
 ## Nouce is too high
 
