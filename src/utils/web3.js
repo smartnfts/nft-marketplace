@@ -7,29 +7,27 @@ export function getProvider () {
 }
 
 export const chains = {
-  polygonMumbaiTestnet: {
-    name: 'Polygon Testnet Mumbai',
-    chain: 'Polygon',
+  energiTestnet: {
+    name: 'Energi Testnet',
+    chain: 'Energi',
     rpc: [
-      'https://matic-mumbai.chainstacklabs.com',
-      'https://rpc-mumbai.maticvigil.com',
-      'https://matic-testnet-archive-rpc.bwarelabs.com'
+      'https://nodeapi.test.energi.network'
     ],
     faucets: [
-      'https://faucet.polygon.technology/'
+      'https://faucet.energi.network/'
     ],
     nativeCurrency: {
-      name: 'MATIC',
-      symbol: 'MATIC',
+      name: 'Energi',
+      symbol: 'NRG',
       decimals: 18
     },
-    infoURL: 'https://polygon.technology/',
-    shortName: 'maticmum',
-    chainId: 80001,
-    networkId: 80001,
+    infoURL: 'https://energi.world/',
+    shortName: 'energi',
+    chainId: 49797,
+    networkId: 49797,
     explorers: [{
-      name: 'polygonscan',
-      url: 'https://mumbai.polygonscan.com',
+      name: 'Block Explorer',
+      url: 'https://explorer.test.energi.network',
       standard: 'EIP3091'
     }]
   }

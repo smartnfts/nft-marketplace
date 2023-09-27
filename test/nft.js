@@ -6,7 +6,7 @@ describe('NFT', function () {
   let nftContract
   let account1
   let account2
-  const marketplaceAddress = '0x8ba1f109551bD432803012645Ac136ddd64DBA72' // Random Mock Address
+  const marketplaceAddress = '0xd66Ee1691Ffe9F7d476Afc5d90C38e41cB44DC3E' // Random Mock Address
 
   beforeEach(async () => {
     const NFT = await ethers.getContractFactory('NFT')
