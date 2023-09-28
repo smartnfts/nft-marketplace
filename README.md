@@ -116,6 +116,8 @@ However, new deployed contract addresses can be updated on the frontend simply b
 
 _\* You'll need to create the envs on Vercel first_
 
+[NFT Marketplace](https://nft-marketplace-zalam003-smartcorp.vercel.app/)
+
 # Development Challenges
 
 - Updating NFT UI Cards after an action was performed
