@@ -23,14 +23,14 @@ module.exports = {
       chainId: 1337
     },
     energiTestnet: {
-      url: String(RPC_URL || "https://nodeapi.test.energi.network"),
+      url: "https://nodeapi.test.energi.network",
       accounts: [process.env.ACCOUNT_PRIVATE_KEY, process.env.ACCOUNT2_PRIVATE_KEY],
       gas: 1000000,
       gasPrice: 20000000000, // 20 GWei
       chainId: 49797,
-    },
+    },    
     energiMainnet: {
-      url: String(RPC_URL || "https://nodeapi.energi.network"),
+      url: "https://nodeapi.energi.network",
       accounts: [process.env.ACCOUNT_PRIVATE_KEY, process.env.ACCOUNT2_PRIVATE_KEY],
       gas: 1000000,
       gasPrice: 20000000000, // 20 GWei
@@ -59,6 +59,6 @@ module.exports = {
           browserURL: "https://explorer.test.energi.network"
         },
       },
-    ]
-  }
-}
+    ],
+  },
+};

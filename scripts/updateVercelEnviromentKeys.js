@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const axios = require('axios')
 const hre = require('hardhat')
 
