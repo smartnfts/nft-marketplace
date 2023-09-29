@@ -30,12 +30,13 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+.env*.local
+.env
 
 # vercel
 .vercel
 
 node_modules
-.env
 coverage
 coverage.json
 typechain
@@ -46,4 +47,3 @@ artifacts
 
 # Project
 /config.js
-.env*.local

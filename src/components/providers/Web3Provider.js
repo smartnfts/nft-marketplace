@@ -7,7 +7,7 @@ import axios from 'axios'
 
 const contextDefaultValues = {
   account: '',
-  network: 'Energi',
+  network: 'energi',
   balance: 0,
   connectWallet: () => {},
   marketplaceContract: null,
@@ -17,7 +17,7 @@ const contextDefaultValues = {
 }
 
 const networkNames = {
-  energi: 'energi',
+  energi: 'NRG',
   unknown: 'LOCALHOST'
 }
 
@@ -39,7 +39,7 @@ export default function Web3Provider ({ children }) {
   }, [])
 
   async function initializeWeb3WithoutSigner () {
-    const alchemyProvider = new ethers.providers.AlchemyProvider(80001)
+    const alchemyProvider = new ethers.providers.AlchemyProvider(49797)
     setHasWeb3(false)
     await getAndSetWeb3ContextWithoutSigner(alchemyProvider)
   }

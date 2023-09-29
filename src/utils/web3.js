@@ -17,7 +17,7 @@ export const chains = {
       'https://faucet.energi.network/'
     ],
     nativeCurrency: {
-      name: 'Energi',
+      name: 'NRG',
       symbol: 'NRG',
       decimals: 18
     },
